@@ -1,6 +1,10 @@
 name: Hello GitHub Actions
 on:
+  push:
+    branches:
+      - '**' # This tells GitHub to run on ANY branch push
   workflow_dispatch:
+
 jobs:
   hello:
     runs-on: ubuntu-latest
